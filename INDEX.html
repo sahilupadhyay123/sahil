@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    body{
+        transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        /* Light Mode */
+        body.light-mode {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        /* Dark Mode */
+        body.dark-mode {
+            background-color: #272626;
+            color: #ffffff;
+        }
+
+        /* Toggle Button */
+        .toggle-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #00aaff;
+            color: #fff;
+            border: none;
+            border-radius: 20px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            outline: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .toggle-btn:hover {
+            background-color: #b8e600;
+        }
+    .navbar {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        /* Left content (e.g., links) */
+        .navbar .left-content {
+            display: flex;
+            gap: 15px;
+        }
+
+        .navbar .left-content a {
+            color: #00f2ff;
+            font-weight: bold;
+            padding: 5px 10px;
+            text-decoration: none;
+        }
+        .navbar .left-content a:hover {
+            color: #0aff02;
+            font-weight: bold;
+            padding: 5px 10px;
+            text-decoration: none;
+            transition: .5s;
+        }
+        .left{
+            justify-content: center;
+            margin: 30px;
+        }
+        img{
+            height: 400px;
+            filter: drop-shadow(0 0 20px #00f2ff);
+        }
+        .sec{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .skills{
+            font-size: 50px;
+            display: block;
+        }
+        .cls{
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #f4f4f4;
+            color: #333;
+        }
+
+        footer a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .Contacts {
+            justify-items: center;
+        }
+        .Contacts form {
+            max-width: 70rem;
+            margin: 1rem auto;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .Contacts form .input-box{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .box{
+            width: 60%;
+            padding: 15px;
+            font-size: 1rem;
+            color: #00f2ff;
+            background-color: black;
+            border-radius: 0.8rem ;
+            border: 2px solid rgb(0, 204, 255);
+            margin: 6px 0;
+            resize: none;
+        }
+        .btn{
+            bottom: 20px;
+            right: 20px;
+            background-color: #00aaff;
+            color: #fff;
+            border: none;
+            border-radius: 20px;
+            padding: 10px 20px;
+            font-size: 1rem;
+        }
+        .your{
+            padding: 70px;
+        }
+
+@media(max-width: 1285px){
+.skills{
+        grid-template-columns: repeat(2,1fr);
+        margin: 0 5rem;
+    }
+}
+@media(max-width: 991px){
+    section{
+        padding: 10rem 3% 2rem;
+    }
+    .skills{
+        padding-bottom: 0px 10;
+    }
+    .footer{
+        padding-bottom: 2rem 3%;
+    }
+    .navbar{
+        padding: 2rem 3%;
+        background-color: #000000;
+    }
+    .navbar a{
+        display: block;
+        font-size: 2rem;
+    }
+}
+@media(max-width: 895px){
+    html{
+        font-size: 85%;
+    }
+    .navbar{
+        display: block;
+        width: 100%;
+    }
+    .right-heading{
+        align-content: center;
+        display: block;
+        justify-items: center;
+        font-size: 150%;
+    }
+    .left-content{
+        align-items:  center;
+        display: block;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .navbar a{
+        font-size: 150%;
+    }
+    .sec{
+        display: block;
+        padding-left: 10%;
+    }
+    .left{
+        display: inline;
+        margin: 0%;
+        padding: 10%;
+        align-content: center;
+        height: 200px;
+    }
+    .left img{
+        margin: 0px;
+        justify-content: center;
+}
+    .right{
+        display: block;
+        justify-items: center;
+        padding: 0%;
+    }
+    .your{
+        padding:  50px;
+
+    }
+    .skills{
+        padding: 0%;
+        margin: 0%;
+    }
+    .box{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .cls{
+        padding-left: 10%;
+    }
+
+}
+</style>
+<body class="light-mode">
+    
+<id="First">
+    <div class="navbar">
+        <div class="right-heading"><h1  style="font-size: px;">Portfolio</h1></div>
+        <div class="left-content">
+            <a href="#Home">Home</a>
+            <a href="#About">About </a>
+            <a href="#Skills">Skills </a>
+            <a href="#Contact">Contact</a>
+        </div>
+    </div>
+</section>
+
+<section id="Home">
+    <div class="sec">
+        <div class="left">
+            <img src="small sahil.jpg" alt=""  >
+        </div>
+        <div class="right">
+            <h2 style="font-size: 80px;">Hi! I am</h2>
+            <h3 style="font-size: 50px; color: #ff6a00;"><center>Sahil Upadhyay</center></h3>
+            <h2>Welcome to my profile.</h2>
+        </div>
+    </div>
+</section><br><br><hr>
+
+<section id="About"><br>
+    <div class="cls">
+        <div class="skills">
+          <b>  About me</b>
+        </div> <br><br><br>
+        <h1 style="color: #02afff;">Web developer</h1> <br><br><br>
+        <p style="text-align: left;">Hello! I’m Sahil Upadhyay, a second-year BSc IT student passionate about technology and web development. My journey into the world of programming began with curiosity, and now it’s a growing passion.
+
+            As a beginner web developer, I specialize in creating clean, responsive, and user-friendly websites. I have experience with HTML, CSS, and JavaScript and am eager to learn more advanced technologies.
+            
+            I’m actively building projects that demonstrate my skills and problem-solving abilities. Through my portfolio, I aim to connect with individuals and businesses looking for creative and functional websites.
+            
+            I believe in continuous learning and staying updated with the latest trends in web development. My goal is to grow as a developer while delivering value to my clients.
+            
+            Feel free to explore my portfolio, and don’t hesitate to reach out if you’d like to work together!
+            </p>
+    </div>
+</section><br><br><br><br><br><br><hr><br>
+
+
+
+<section id="Skills" ><br>
+    <div class="cls" style="padding-left: 10%;">
+        <h1 class="skills">Skills</h1><br>
+        <h1 style="color: #02afff;">Technical Skills</h1> <br>       <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>React, Node.js</li>
+            <li>Python, Django</li>
+        </ul><br><br>
+        <h1 style="color: #02afff;">Soft Skills</h1> <br>    <ul>
+            <ul>
+            <li>Teamwork</li>
+            <li>Problem-Solving</li>
+            <li>Adaptability</li>
+        </ul><br><br>
+        <h1 style="color: #02afff;">Certifications</h1> <br>       <ul>
+            <ul>
+            <li>Certified Web Developer - XYZ Academy</li>
+        </ul>
+    </div>
+</section><br><br><br><br><br><br><hr>
+
+
+<section id="Contact"><br>
+<div class="Contacts">
+    <b  class="skills cls">Contact me</b>
+ 
+    <form action="grid">
+        <input class="box" type="text" name="fname" id="fname" placeholder="Full name" required> <br><br>
+        <input class="box" type="email" name="fname" id="fname" placeholder="Email" required> <br><br>
+        <input class="box" type="number" name="fname" id="fname" placeholder="Phone number" required> <br><br>
+        <input class="box" type="text" name="fname" id="fname" placeholder="Subject" required> <br><br>
+        <input class="box your"  type="text" name="fname" id="fname" placeholder="Your message" required> <br><br>
+        <input type="submit" value="send message" name="fname" class="btn">
+
+    </form>
+</div>
+    </section><br><br><br><br><br><br><hr><br>
+
+
+
+
+<footer><button class="toggle-btn" onclick="toggleDarkMode()"><b>Dark Mode</b></button>
+    <script>
+        function toggleDarkMode() {
+            const body = document.body;
+
+            // Toggle dark-mode class on body
+            body.classList.toggle("dark-mode");
+            
+            // Save mode preference in localStorage
+            const isDarkMode = body.classList.contains("dark-mode");
+            localStorage.setItem("darkMode", isDarkMode ? "enabled" : "disabled");
+        }
+
+        // Load and apply mode preference on page load
+        window.onload = () => {
+            const darkMode = localStorage.getItem("darkMode");
+            if (darkMode === "enabled") {
+                document.body.classList.add("dark-mode");
+            }
+        }
+    </script>
+     <p>&copy; 2024 Sahil Upadhyay. Designed with ❤️</p>
+     <a href="#top">Back to Top</a>
+</footer>
+</body>
+</html>
